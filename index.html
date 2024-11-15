@@ -6,7 +6,49 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<header>
+    <div class="header_wrapper">
+        <h1>
+            <span class="rock"> ROCK </span>
+            <span class="paper"> PAPER </span>
+            <span class="scissors"> SCISSORS </span>
+        </h1>
+        <p> 3 Options | 5 Lives </p>
+        <p>
+            <span class="rock">Rock </span>Beats <span class="scissors">Scissors</span> |
+            <span class="paper">Paper </span>Beats <span class="rock">Rock</span> |
+            <span class="scissors">Scissors </span>Beats <span class="paper">Paper</span>
+        </p>
+    </div>
+</header>
+<main>
+    <div class="weapons_area">
+        <button class="weapon_button rock_button">
+            <img alt="rock" src="img/placeholder">
+        </button>
+        <button class="weapon_button paper_button">
+            <img alt="paper" src="img/placeholder">
+        </button>
+        <button class="weapon_button scissors_button">
+            <img alt="scissor" src="img/placeholder">
+        </button>
+    </div>
+    <div class="computer_play">
+        <p class="computer_title"> Enemy's Weapon </p>
+        <i>
 
+        </i>
+    </div>
+    <div class="game_output">
+        <p class="rounds">Round: x</p>
+        <p class="lives"> Your score: 0 | Enemy score: 0 </p>
+        <p class="combat_text"> Combat Area: No moves yet</p>
+    </div>
+    <div class="end_game">
+        <p class="end_text"> </p>
+        <button class="retry_button"> Play Again! </button>
+    </div>
+</main>
 <script src="js/script.js"></script>
 </body>
 </html>
