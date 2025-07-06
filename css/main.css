@@ -1,0 +1,99 @@
+:root {
+    --purple-color: #8070ac;
+    --green-color: #62b49c;
+    --blue-color: #8ba9ce;
+    --grey-color: #5e5e5e;
+}
+
+body {
+    font-family: 'Macondo Swash Caps', cursive;
+    color: var(--grey-color);
+}
+
+.gameHeader {
+    text-align: center;
+    font-size: 25px;
+    color: #5e5e5e;
+}
+
+.dragon{
+    color: var(--green-color);
+}
+
+.knight {
+    color: var(--purple-color);
+}
+
+.mage {
+    color: var(--blue-color);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.weapons-area {
+    display: flex;
+    justify-content: space-evenly;
+    border: 4px solid var(--grey-color);
+    border-radius: 5px;
+}
+.weapon-button {
+    margin: 35px 0;
+    background-color: transparent;
+    border: none;
+}
+
+/* Little Animation */
+.weapon-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.dragon-icon:hover{
+    color: var(--green-color);
+}
+
+.knight-icon:hover {
+    color: var(--purple-color);
+}
+
+.mage-icon:hover {
+    color: var(--blue-color);
+}
+
+
+.disabled-button .weapon-icon {
+    cursor: default;
+    transform: none;
+}
+
+/* Computer Div Borders for Javascript */
+.purple-border {
+    border-right: 4px solid #8070ac;
+}
+.green-border {
+    border-right: 4px solid #62b49c;
+}
+.red-border {
+    border-right: 4px solid #b96b78;
+}
+.grey-border {
+    border-right: 4px solid #5e5e5e;
+}
+
+/* Footer */
+.copyright {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-top: 4px solid var(--grey-color);
+    text-align: center;
+}
+
